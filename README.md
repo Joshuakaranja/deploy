@@ -1,13 +1,72 @@
-# React + Vite
+# Movie App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A React application that allows users to browse movies, search for specific titles, and manage their favorite movies. Built with Vite and React.
 
-Currently, two official plugins are available:
+## Repository
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+🔗 [GitHub Repository](https://github.com/Joshuakaranja/deploy)
 
-## Expanding the ESLint configuration
+## Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-# deploy
+- Browse popular movies from TMDB API
+- Search functionality for movies
+- Add/Remove movies to favorites
+- Responsive design with CSS
+- Real-time movie data updates
+
+## Technologies Used
+
+- React
+- React Router for navigation
+- Context API for state management
+- TMDB API for movie data
+- CSS for styling
+- Vite for development
+
+## Project Structure
+
+```
+src/
+├── components/
+│   ├── MovieCard.jsx
+│   └── NavBar.jsx
+├── contexts/
+│   └── MovieContext.jsx
+├── css/
+│   ├── App.css
+│   ├── Favorites.css
+│   ├── Home.css
+│   ├── MovieCard.css
+│   ├── Navbar.css
+│   └── index.css
+├── pages/
+│   ├── Favorites.jsx
+│   └── Home.jsx
+├── services/
+│   └── Api.js
+├── App.jsx
+└── main.jsx
+```
+
+## Getting Started
+
+1. Clone the repository
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+3. Start the development server:
+   ```bash
+   npm run dev
+   ```
+4. Open http://localhost:5173 in your browser
+
+## API Integration
+
+This project uses the TMDB (The Movie Database) API to fetch movie data. The API key is configured in `services/Api.js`.
+
+## Available Scripts
+
+- `npm run dev` - Start development server
+- `npm run build` - Build for production
+- `npm run preview` - Preview production build
