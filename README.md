@@ -70,3 +70,4 @@ This project uses the TMDB (The Movie Database) API to fetch movie data. The API
 - `npm run dev` - Start development server
 - `npm run build` - Build for production
 - `npm run preview` - Preview production build
+# Josh-box
